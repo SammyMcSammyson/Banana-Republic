@@ -1,5 +1,42 @@
-* {
+body {
   background-color: rgba(255, 196, 0, 0.904);
+  background-color: antiquewhite;
 }
 
 /* Need to add media Quieres - not optional - also need to read up on this - 12/09/24 1543  */
+
+h1 {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(134, 134, 252);
+}
+
+.bananaTotal {
+  margin: 25px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.bananaButton {
+  margin-left: 48%;
+  width: 5%;
+  height: auto;
+  background-color: blue;
+}
+
+.BpS {
+  text-align: center;
+}
+
+.resetButton {
+  float: right;
+  margin-right: 25%;
+}
+
+.bananaShop {
+  text-align: center;
+}

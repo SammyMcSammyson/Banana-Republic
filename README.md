@@ -20,3 +20,8 @@ Completed the inital skeleton. Need to go away and think of my layout and how I 
 - MEDIA QURIES - I need to work them out.
 - Write down my structure and my plan on paper - can change on the fly.
   Just remember Rocky
+
+---12/09/2024-2040---
+Spent some time planning how i want my page to look, I ahve all the elements I need in place and an image need to change font and some minor styling but will do for now. Shock since I planned it went a lot smoother than before. Also added a simple counter - bit janky need to fix but does the basics. Need to plan my code again properly. Overall good start I think.
+
+Going to watch Rocky now...
