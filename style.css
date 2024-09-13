@@ -22,7 +22,7 @@ h2 {
 }
 
 .bananaButton {
-  margin-left: 48%;
+  margin-left: 47%;
   width: 100px;
   height: 100px;
   background-color: blue;
@@ -40,6 +40,35 @@ h2 {
 }
 
 .bananaShop {
+  background-color: antiquewhite;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */ */
+
+  /* inline-size: 5px; */
+}
+
+.shopNames {
   text-align: center;
-  background-color: aquamarine;
+  background-color: white;
+  /* flex: 0 0 33.3333%; */
+
+  /* padding: 10px; */
+}
+.shopCost {
+  text-align: center;
+  background-color: white;
+  /* flex: 0 0 33.3333%; */
+
+  /* padding: 10px; */
+}
+.shopBpSIncrease {
+  text-align: center;
+  background-color: white;
+  /* flex: 0 0 33.3333%; */
+
+  /* padding: 10px; */
 }
