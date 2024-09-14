@@ -1,3 +1,6 @@
+* {
+  font-family: kavoon;
+}
 body {
   /* background-color: rgba(255, 196, 0, 0.904); */
   background-color: antiquewhite;
@@ -7,36 +10,36 @@ body {
 
 h1 {
   text-align: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 h2 {
   text-align: center;
-  background-color: rgb(134, 134, 252);
+  /* background-color: rgb(134, 134, 252); */
 }
 
 .bananaTotal {
   margin: 25px;
   text-align: center;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .bananaButton {
-  margin-left: 47%;
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+  margin-left: 45%;
+  width: 200px;
+  height: 200px;
+  /* background-color: blue; */
 }
 
 .BpS {
   text-align: center;
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 .resetButton {
   float: right;
   margin-right: 25%;
-  background-color: rgb(23, 163, 34);
+  /* background-color: rgb(23, 163, 34); */
 }
 
 .bananaShop {
@@ -46,14 +49,17 @@ h2 {
   /* align-content: flex-start; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 10px; */ */
-
+  /* grid-gap: 10px; */
   /* inline-size: 5px; */
+  width: fit-content;
+  block-size: fit-content;
+  float: left;
 }
 
 .shopNames {
   text-align: center;
   background-color: white;
+
   /* flex: 0 0 33.3333%; */
 
   /* padding: 10px; */
@@ -61,8 +67,8 @@ h2 {
 .shopCost {
   text-align: center;
   background-color: white;
-  /* flex: 0 0 33.3333%; */
 
+  /* flex: 0 0 33.3333%; */
   /* padding: 10px; */
 }
 .shopBpSIncrease {
@@ -71,4 +77,13 @@ h2 {
   /* flex: 0 0 33.3333%; */
 
   /* padding: 10px; */
+}
+
+.buyButtons {
+  display: grid;
+  grid-template-columns: repeat(n, 1fr);
+  float: left;
+  margin-top: 16px;
+  margin-left: 50px;
+  gap: 30px;
 }

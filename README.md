@@ -39,3 +39,25 @@ Spent all day working on it. Spent time with Manny to work out how API nomcletur
 - going better than last week. Having manny and Joe helped alot also ttalking to over people.
 
 Rocky is not really a sports movie...
+
+14/09/2024 1458
+
+Spent a few hours working on it. I have got the basic game down, you can buy stuff, get evertyhing linked and cannot but items if you do not have enough money. I styled the table beter. Also added commments usiing local storage which was nice . Overall I have achived all goals bar media Quieies - still do not get them will read more - there are some changes I want to add
+
+- Local Storage for cookie count data
+- Sell buttons - really simple copy code change + to -
+- Make my button code into a for each function it is cleaner and allows me to add things
+- track how many of each item you have - simple image appearing could work - I have a lot of empty space on the right.
+
+🎯 Fetch upgrade data from the provided API and at least one upgrade from the API update the cookie count. Yes
+🎯 Ensure that functions are used effectively to keep code organised and reusable. Yes - NOT THE BUTTON CODE THOUGH
+🎯 Implement event listeners to handle user interactions. Yes
+🎯 Use local storage to save and restore the cookie count and relevant game information. Yes for relevant game data not cookie count data
+🎯 Use setInterval to increment the cookie count and manage the game state each second.
+Managing the game state includes saving progress and updating the DOM. Yes but my logic I used overall is very different fromm how most people implemented it e.g. having my BpS in my Banana Count variable rather then seperate which works for now but restricts how to build things and causes weird bugs.
+
+🏹 Consolidate upgrade management by managing all upgrades in a single function. Have not achived yet but have plans
+🏹 Improve UX with animations, sound effects, or other visual effects. Have not achived yet but have plans
+🏹 Fantastic use of README to provide important information such as a description of the project, how to deploy and other app information. No - you will just get my rambling thoughts.
+🏹 Implement error handling using try/catch. Limited knowledge on this but will read up because I tried it a little and it worked.
+🏹 Create a menu for users to adjust game options like sound effects or display preferences. Need other items before I even think about this.
