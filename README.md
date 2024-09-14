@@ -61,3 +61,6 @@ Managing the game state includes saving progress and updating the DOM. Yes but m
 🏹 Fantastic use of README to provide important information such as a description of the project, how to deploy and other app information. No - you will just get my rambling thoughts.
 🏹 Implement error handling using try/catch. Limited knowledge on this but will read up because I tried it a little and it worked.
 🏹 Create a menu for users to adjust game options like sound effects or display preferences. Need other items before I even think about this.
+
+14/09/24 2128
+Added images and made the res4t button work for them need to make the images actually fit but thats a tomorrow problem. Overall its going...Im off to prees...

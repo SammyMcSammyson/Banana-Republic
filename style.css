@@ -87,3 +87,11 @@ h2 {
   margin-left: 50px;
   gap: 30px;
 }
+
+.bananaImages{  display: grid;
+    grid-template-columns: repeat(n, 1fr);
+    float: left;
+    margin-top: 16px;
+    margin-left: 50px;
+    gap: 30px;
+  }

@@ -2,7 +2,7 @@ console.log(`Welcome to the Republic`);
 
 //we need to store 2 global values: banana count and BpS
 let BpS = 0; // global variable which is setting the count at 0 - will use throughout.
-let bananaCount = 0 + BpS; // global variable which is setting the count at 0 - will use throughout.
+let bananaCount = 100000000000 + BpS; // global variable which is setting the count at 0 - will use throughout.
 let bananaAutoClickerButton = document.getElementById(
   "bananaAutoClickerButton"
 ); // DOM to use in event listner for "buy"
@@ -67,6 +67,17 @@ function resetHandler() {
   //   console.log(bananaCount);
   //   liveBananaCount();
   liveBpS();
+  document.getElementById(`bananaAutoClickerImage`).innerHTML = ``;
+  document.getElementById(`bananaEnhancedOvenImage`).innerHTML = ``;
+  document.getElementById(`bananaCookieFarmImage`).innerHTML = ``;
+  document.getElementById(`bananaRobotBakerImage`).innerHTML = ``;
+  document.getElementById(`bananaCookieFactoryImage`).innerHTML = ``;
+  document.getElementById(`bananaMagicFlowerImage`).innerHTML = ``;
+  document.getElementById(`bananaTimeMachineImage`).innerHTML = ``;
+  document.getElementById(`bananaQuantumOvenImage`).innerHTML = ``;
+  document.getElementById(`bananaAlienTechnologyImage`).innerHTML = ``;
+  document.getElementById(`bananaInterdimensionalBaker`).innerHTML = ``;
+
   localStorage.clear();
 }
 
@@ -78,6 +89,14 @@ bananaAutoClickerButton.addEventListener("click", function () {
     BpS = BpS + 1;
     bananaCount = bananaCount - 100;
     liveBpS();
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaAutoClickerImage")
+      .appendChild(autoclickimage);
 
     //this counts as using local storage... I class it as "relevant game information"
     let alerted = localStorage.getItem("alerted") || "";
@@ -96,7 +115,14 @@ bananaEnhancedOvenButton.addEventListener("click", function () {
     BpS = BpS + 5;
     bananaCount = bananaCount - 500;
     liveBpS();
-
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaEnhancedOvenImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedOven = localStorage.getItem("alertedOven") || "";
     if (alertedOven != "yes") {
@@ -113,7 +139,14 @@ bananaCookieFarmButton.addEventListener("click", function () {
     BpS = BpS + 10;
     bananaCount = bananaCount - 1000;
     liveBpS();
-
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaCookieFarmImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedFarm = localStorage.getItem("alertedFarm") || "";
     if (alertedFarm != "yes") {
@@ -130,7 +163,14 @@ bananaRobotBakerButton.addEventListener("click", function () {
     BpS = BpS + 20;
     bananaCount = bananaCount - 2000;
     liveBpS();
-
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaRobotBakerImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedBakers = localStorage.getItem("alertedBakers") || "";
     if (alertedBakers != "yes") {
@@ -147,7 +187,14 @@ bananaCookieFactoryButton.addEventListener("click", function () {
     BpS = BpS + 50;
     bananaCount = bananaCount - 5000;
     liveBpS();
-
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaCookieFactoryImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedFactory = localStorage.getItem("alertedFactory") || "";
     if (alertedFactory != "yes") {
@@ -164,6 +211,15 @@ bananaMagicFlowerButton.addEventListener("click", function () {
     BpS = BpS + 100;
     bananaCount = bananaCount - 10000;
     liveBpS();
+
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaMagicFlowerImage")
+      .appendChild(autoclickimage);
 
     //this counts as using local storage... I class it as "relevant game information"
     let alertedFlower = localStorage.getItem("alertedFlower") || "";
@@ -182,6 +238,14 @@ bananaTimeMachineButton.addEventListener("click", function () {
     bananaCount = bananaCount - 20000;
     liveBpS();
 
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaTimeMachineImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedTimeMachine = localStorage.getItem("alertedTimeMachine") || "";
     if (alertedTimeMachine != "yes") {
@@ -198,7 +262,14 @@ bananaQuantumOvenButton.addEventListener("click", function () {
     BpS = BpS + 500;
     bananaCount = bananaCount - 50000;
     liveBpS();
-
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaQuantumOvenImage")
+      .appendChild(autoclickimage);
     //this counts as using local storage... I class it as "relevant game information"
     let alertedQuantum = localStorage.getItem("alertedQuantum") || "";
     if (alertedQuantum != "yes") {
@@ -215,6 +286,15 @@ bananaAlienTechnologyButton.addEventListener("click", function () {
     BpS = BpS + 1000;
     bananaCount = bananaCount - 100000;
     liveBpS();
+
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaAlienTechnologyImage")
+      .appendChild(autoclickimage);
 
     //this counts as using local storage... I class it as "relevant game information"
     let alertedAlien = localStorage.getItem("alertedAlien") || "";
@@ -235,6 +315,14 @@ bananaInterdimensionalBakerButton.addEventListener("click", function () {
     BpS = BpS + 2000;
     bananaCount = bananaCount - 200000;
     liveBpS();
+    let autoclickimage = document.createElement("img");
+    autoclickimage.src =
+      "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+    autoclickimage.width = 30;
+    autoclickimage.height = 30;
+    document
+      .getElementById("bananaInterdimensionalBaker")
+      .appendChild(autoclickimage);
 
     //this counts as using local storage... I class it as "relevant game information"
     let alertedIBaker = localStorage.getItem("alertedIBaker") || "";
@@ -283,6 +371,25 @@ async function getShop() {
     bananaShop.appendChild(shopNames);
     bananaShop.appendChild(shopCost);
     bananaShop.appendChild(shopBpSIncrease);
+
+    // buyButton.addEventListener("click", function (a) {
+    //   //found it easier to create an if function since it allowed me to say no if the person did not have enought bananas.
+    //   if (bananaCount < a.cost) {
+    //     alert(`you do not have the facilities for that bruv`);
+    //   } else {
+    //     BpS = BpS + a.increase;
+    //     bananaCount = bananaCount - a.cost;
+    //     liveBpS();
+
+    //     //this counts as using local storage... I class it as "relevant game information"
+    //     let alerted = localStorage.getItem("alerted") || "";
+    //     if (alerted != "yes") {
+    //       alert("The world domination begins...");
+    //       localStorage.setItem("alerted", "yes");
+    //     }
+    //   }
+    // });
+    //super annoying since the code gets peoples name in etc. however I have the buy buttons deep in other parts of my code so unless I edit it all of them to make it work. I would rather focus on local storage and media qureys first. May come back to it later however the information is there to build on. Also had to reset from Github because the code was that broken...probably should figure how and what is connected. 14/09/2024 2040
   });
 }
 
