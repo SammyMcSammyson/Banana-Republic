@@ -67,3 +67,7 @@ Managing the game state includes saving progress and updating the DOM. Yes but m
 
 14/09/24 2128
 Added images and made the res4t button work for them need to make the images actually fit but thats a tomorrow problem. Overall its going...Im off to prees...
+
+15/09/24 1209
+
+Still got some features to add but I am a solid 50% happy with it howver going to run out of time. The project does not interest me - therefore proving the parts that do intrest me is UI/UX I think this is becuase I am creating something with creativity while this we are pretty limited - the process is creative but the product isnt while with UI you get both. Overall it has gone OK I have a base game however if I had to do it all again I would do it very diffrently. Overall a lot easier than last weeks. Writing on paper definitly helped and I look forward to the project. And I am getting more comfortable with functions since I started writing out what I want to acheive. Will not reach a 2 since I cannot get the local storage to work - but I am ok with that - I need to go to the Gym and do some other things. Will be on later but I doubt I will get much done since the improvements require reading and learning rather than using knowledge I already have.
