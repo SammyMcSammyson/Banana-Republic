@@ -88,10 +88,80 @@ h2 {
   gap: 30px;
 }
 
-.bananaImages{  display: grid;
-    grid-template-columns: repeat(n, 1fr);
-    float: left;
-    margin-top: 16px;
-    margin-left: 50px;
-    gap: 30px;
+.bananaImages {
+  display: grid;
+  grid-template-columns: repeat(n, 1fr);
+  float: left;
+  margin-top: 16px;
+  margin-left: 50px;
+  gap: 30px;
+}
+
+.bananaFloat {
+  bottom: 70%;
+  position: absolute;
+  animation: linear;
+  animation-name: run;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes run {
+  /* I know there is a way to not brute force the opacity but cba to look it up will sort out in morning 14/09/24 0355 */
+  0% {
+    opacity: 1;
+    left: 55%;
   }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    left: 57%;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  /* iPhone, portrait 480x320 */
+}
+@media (min-width: 481px) {
+  /*smaller tablets */
+}
+@media (min-width: 641px) {
+  /*portrait iPad */
+}
+@media (min-width: 961px) {
+  /*landscape iPad */
+}
+@media (min-width: 1025px) {
+  /*laptops */
+}
+@media (min-width: 1281px) {
+  /* desktops */
+}
+
+/* finally understand media queries after reading about them all morning, got these stats off MDN apparently the best breakpoints for items with width also takes into account orientation. This should solve the problem I was having on my phone. However since how my code is made I think I will have a problem on phone still. 15/09/24 1125 */

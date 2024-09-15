@@ -1,8 +1,20 @@
 console.log(`Welcome to the Republic`);
 
+window.onload = function () {
+  //   let bananaCount = localStorage.getItem(`bananaCount`);
+  let BpS = localStorage.getItem(`BpS`);
+  console.log(BpS);
+};
+setInterval(function () {
+  localStorage.setItem(`bananaCount`, bananaCount);
+  localStorage.setItem(`BpS`, BpS);
+}, 1000); // trying to work out local storage of the count but I think I am going down the wrong path I got it updating however struggling to reload the info on refreshing the page 15/09/2024 1150
+
 //we need to store 2 global values: banana count and BpS
-let BpS = 0; // global variable which is setting the count at 0 - will use throughout.
-let bananaCount = 100000000000 + BpS; // global variable which is setting the count at 0 - will use throughout.
+let BpS = 0;
+// global variable which is setting the count at 0 - will use throughout.
+let bananaCount = 0 + BpS; // global variable which is setting the count at 0 - will use throughout.
+
 let bananaAutoClickerButton = document.getElementById(
   "bananaAutoClickerButton"
 ); // DOM to use in event listner for "buy"
@@ -34,6 +46,13 @@ let bananaBpS = document.getElementById("BpS"); //DOM to use in event listner fo
 let bananaShop = document.getElementById("bananaShop");
 let resetButton = document.getElementById("resetButton");
 
+function userName() {
+  let userName = prompt("What is your Name?");
+  document.getElementById("personliseMessage").innerHTML =
+    userName + ` world domination is a few clicks away...`;
+}
+userName(); //creating a place that where you enter a name and edits the words on screen
+
 function liveBananaCount() {
   //code which shows the value of the banana count and replaces the words.
   document.getElementById("BananaTotal").textContent = bananaCount;
@@ -56,6 +75,15 @@ function handleBananaClick() {
   bananaCount = bananaCount + 1;
   //   document.getElementById("BananaTotal").textContent = bananaCount;
   liveBananaCount(); //replacing words with live counter - looks good and is simple to do plus it makes sense in my head to do it this way. Initial problem was when I put it to +1 it was adding 2 to the counter I assume since its running it twice due to live banna count function also using bananaCount as a variable. The pure coder in me would spend 20 minutes fixing this so they wouldn't interfere with each other. The lazy man in me says they should only add 0.5 at a time if it is getting doubled... I assume when I start messing around with BpS I will have to come back and fix this. Heres hoping I don't though. 12/09/24 2024 UPDATE for some reason presson my rest button also adds to the counter but only by 0.5... wierd but I havn't coded it yet to Reset so heres hoping the lazy plan still works. 12/09/2024 2026. UPDATE Really confused now when I click the image it adds +1 as wanted however if I click around the pictue it clicks +0.5 which is wild I have not a clue why suspect its something to do with .innerHTML function but if I take it out the code breaks... 12/09/24 2040 ---UPDATE--- spoke with manny for 20 minutes we could not figure out what was going on he then went away and worked out it was all my notes at the bottom effecting the code. Once I commented the code out it worked exactly how I thought it would and I have the +1 now as well. 13/09/2024 1048.
+  document.getElementById(`masterbanana`).innerHTML = ``;
+  let autoclickimage = document.createElement("img");
+  autoclickimage.src =
+    "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
+  autoclickimage.width = 50;
+  autoclickimage.height = 50;
+  autoclickimage.className = "bananaFloat";
+  document.getElementById("masterbanana").appendChild(autoclickimage);
+  //adding some code so that when I click the image it makes a smaller image appear then in CSS make it disappers slowly. Code is pretty janky will probly have to fix in the morning when I am not inebriated 15/09/24 0352
 }
 
 resetButton.addEventListener("click", resetHandler);
@@ -92,8 +120,8 @@ bananaAutoClickerButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaAutoClickerImage")
       .appendChild(autoclickimage);
@@ -118,8 +146,8 @@ bananaEnhancedOvenButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaEnhancedOvenImage")
       .appendChild(autoclickimage);
@@ -142,8 +170,8 @@ bananaCookieFarmButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaCookieFarmImage")
       .appendChild(autoclickimage);
@@ -166,8 +194,8 @@ bananaRobotBakerButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaRobotBakerImage")
       .appendChild(autoclickimage);
@@ -190,8 +218,8 @@ bananaCookieFactoryButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaCookieFactoryImage")
       .appendChild(autoclickimage);
@@ -215,8 +243,8 @@ bananaMagicFlowerButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaMagicFlowerImage")
       .appendChild(autoclickimage);
@@ -241,8 +269,8 @@ bananaTimeMachineButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaTimeMachineImage")
       .appendChild(autoclickimage);
@@ -265,8 +293,8 @@ bananaQuantumOvenButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaQuantumOvenImage")
       .appendChild(autoclickimage);
@@ -290,8 +318,8 @@ bananaAlienTechnologyButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaAlienTechnologyImage")
       .appendChild(autoclickimage);
@@ -318,8 +346,8 @@ bananaInterdimensionalBakerButton.addEventListener("click", function () {
     let autoclickimage = document.createElement("img");
     autoclickimage.src =
       "https://static.vecteezy.com/system/resources/thumbnails/044/248/896/small_2x/cute-banana-cartoon-emoji-icon-character-illustration-png.png";
-    autoclickimage.width = 30;
-    autoclickimage.height = 30;
+    autoclickimage.width = 20;
+    autoclickimage.height = 20;
     document
       .getElementById("bananaInterdimensionalBaker")
       .appendChild(autoclickimage);
@@ -394,44 +422,3 @@ async function getShop() {
 }
 
 getShop();
-
-// // let stats = {
-// //   bananaCount: 0,
-// //   BpS: 0,
-// // };
-// // we can save either as an object or as variables both ave pros and cons for me I am leaning towards 2 different variables since I find that easier to manipulate.
-
-// //Dom Manipulation
-// //Select the DOM elements (buttons, imgs, p, ...)
-
-// //a way to store the shop upgrades that come from the API
-// let shopUpgrades = []; //store as an array since it is the same as the API.
-
-// function getShopUpgrades() {
-//   //fetch the data
-//   //translate into JSON
-//   //PUSH the items the shopUpgrades array above
-// }
-
-// //an event listner to click on the banana button.
-// //select the banana button/img
-// //write yyour event handler and event listner
-
-// addEventListener("click", handleBananaClick);
-
-// //we need a timer that increases the Banana Count value by one every second.
-// setInterval(function () {
-//   //I want to incearse the value of bananaCount by one every second
-//   //I want to update the value displayed on the page.
-//   //Update cookieCount
-//   //I want to store this as a local value.
-// }, 1000);
-
-// function renderShopUpgrades() {
-//   //create DOM elements
-//   //you will use a loop or array mehtod
-//   shopUpgrades.forEach(function (upgraede) {
-//     //for eacj item in the array, assign the value to a DOM element
-//     //append the elelment to the DOM
-//   });
-// }

@@ -57,7 +57,10 @@ Spent a few hours working on it. I have got the basic game down, you can buy stu
 Managing the game state includes saving progress and updating the DOM. Yes but my logic I used overall is very different fromm how most people implemented it e.g. having my BpS in my Banana Count variable rather then seperate which works for now but restricts how to build things and causes weird bugs.
 
 🏹 Consolidate upgrade management by managing all upgrades in a single function. Have not achived yet but have plans
-🏹 Improve UX with animations, sound effects, or other visual effects. Have not achived yet but have plans
+🏹 Improve UX with animations, sound effects, or other visual effects. Have not achived yet but have plans.
+
+<!-- Have now achived this but rather janky will focus on local storage 15/09/2024 1125 -->
+
 🏹 Fantastic use of README to provide important information such as a description of the project, how to deploy and other app information. No - you will just get my rambling thoughts.
 🏹 Implement error handling using try/catch. Limited knowledge on this but will read up because I tried it a little and it worked.
 🏹 Create a menu for users to adjust game options like sound effects or display preferences. Need other items before I even think about this.
